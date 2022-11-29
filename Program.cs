@@ -15,3 +15,18 @@ int Quantity(string[] massive, int num)
     }
     return num;
 }
+
+//Метод присваивания нужных элементов изначального массива новому
+string[] Work(string[] startMass, string[] endMass)
+{
+    int j = 0;
+    for(int i = 0; i < text.Length; i++)
+    {
+        if(startMass[i].Length <= 3)
+        {
+            endMass[j] = startMass[i];
+            j++;
+        }
+    }
+    return endMass;
+}
