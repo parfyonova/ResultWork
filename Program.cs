@@ -3,6 +3,12 @@ string[] text = Console.ReadLine()!.Split(',');
 Console.WriteLine("Изначальный массив данных: ");
 PrintResult(text);
 
+int count = 0;
+int S = Quantity(text, count);
+string[] Mass = new string[S];
+Work(text, Mass);
+Console.WriteLine("Отсортированный массив данных: ");
+PrintResult(Mass);
 
 //Метод подсчета кол-ва элементов (меньше или равны 3)
 int Quantity(string[] massive, int num)
